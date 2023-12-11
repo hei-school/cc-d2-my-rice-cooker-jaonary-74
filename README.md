@@ -2,7 +2,7 @@
 
 ## RICE COOKER PROGRAM
 
-This program is designed to facilitate the use of wallet
+This program is designed to facilitate the use of rice cooker
 
 ### If you want to make a progamm like this, I suggest to follow the installation and config.
 
