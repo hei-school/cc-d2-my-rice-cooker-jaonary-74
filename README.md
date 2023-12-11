@@ -2,16 +2,13 @@
 
 ## RICE COOKER PROGRAM
 
-This program is designed to facilitate the use of wallet
+## Naming conventions:
+- class name chould use PascalCase
+- variable and function names should use camelCase
+[https://google.github.io/styleguide/tsguide.html#file-encoding-utf-8]
 
-### If you want to make a progamm like this, I suggest to follow the installation and config.
+## Error handing
+- The code uses throw statements to throw errors
 
-### For typescript
-
-    link here
-
-### For python
-
-    link here
-
-## `**Good luck!**`
+## Feature
+`this code has a problem during execution but I can't find why` 
