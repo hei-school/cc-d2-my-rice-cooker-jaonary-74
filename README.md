@@ -8,9 +8,9 @@ This program is designed to facilitate the use of wallet
 
 ### For typescript
 
-    link here
+    [https://github.com/hei-school/cc-d2-my-rice-cooker-jaonary-74/blob/feature/typescript/README.md]
 
-### For python
+### For go
 
     link here
 
