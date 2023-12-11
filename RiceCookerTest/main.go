@@ -1,4 +1,4 @@
-package TestRiceCooker
+package main
 
 import (
 	"fmt"
