@@ -1,1 +1,17 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/PHq8Kfj_)
+
+## RICE COOKER PROGRAM
+
+This program is designed to facilitate the use of wallet
+
+### If you want to make a progamm like this, I suggest to follow the installation and config.
+
+### For typescript
+
+    link here
+
+### For python
+
+    link here
+
+## `**Good luck!**`
