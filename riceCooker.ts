@@ -63,8 +63,8 @@ class RiceCooker {
       output: process.stdout
     });
   
-    return new Promise((resolve) => {
-      rl.question(promptMessage, (answer) => {
+    return new Promise<string>((resolve) => {
+      rl.question(promptMessage, (answer: string) => {
         rl.close();
         resolve(answer);
       });
@@ -87,42 +87,42 @@ class RiceCooker {
       if (userInput !== null) {
         menu = parseInt(userInput, 10);
   
-        if (menu === 1) {
-          const hasPowerInput = await getUserInput("Y a-t-il du courant ? (Oui pour 'o', Non pour 'n') ");
-          const hasPower = hasPowerInput === 'o';
-          riceCooker.setPower(hasPower);
-  
-          try {
-            riceCooker.turnOn();
-          } catch (error) {
-            console.log("Une erreur s'est produite : " + error.message);
-          }
-        } else if (menu === 2) {
-          const content = await getUserInput("Veuillez ajouter un aliment : ");
-          if (content !== null && content.length !== 0) {
-            try {
-              riceCooker.addContent(content);
-            } catch (error) {
-              console.log("Une erreur s'est produite : " + error.message);
-            }
-          }
-        } else if (menu === 3) {
-          try {
-            riceCooker.cook();
-          } catch (error) {
-            console.log("Une erreur s'est produite : " + error.message);
-          }
-        } else if (menu === 4) {
-          try {
-            riceCooker.turnOff();
-          } catch (error) {
-            console.log("Une erreur s'est produite : " + error.message);
-          }
-        } else if (menu === 5) {
-          console.log("Vous avez quitté le programme");
-        } else {
-          console.log("Veuillez choisir le bon menu");
+      if (menu === 1) {
+        const hasPowerInput = await getUserInput("Y a-t-il du courant ? (Oui pour 'o', Non pour 'n') ");
+        const hasPower = hasPowerInput === 'o';
+        riceCooker.setPower(hasPower);
+      
+        try {
+          riceCooker.turnOn();
+        } catch (error: any) {
+          console.log("Une erreur s'est produite : " + error.message);
         }
+      } else if (menu === 2) {
+        const content = await getUserInput("Veuillez ajouter un aliment : ");
+        if (content !== null && content.length !== 0) {
+          try {
+            riceCooker.addContent(content);
+          } catch (error: any) {
+            console.log("Une erreur s'est produite : " + error.message);
+          }
+        }
+      } else if (menu === 3) {
+        try {
+          riceCooker.cook();
+        } catch (error: any) {
+          console.log("Une erreur s'est produite : " + error.message);
+        }
+      } else if (menu === 4) {
+        try {
+          riceCooker.turnOff();
+        } catch (error: any) {
+          console.log("Une erreur s'est produite : " + error.message);
+        }
+      } else if (menu === 5) {
+        console.log("Vous avez quitté le programme");
+      } else {
+        console.log("Veuillez choisir le bon menu");
+      }
       } else {
         console.log("La valeur de l'entrée utilisateur est null.");
       }
