@@ -12,6 +12,6 @@ This program is designed to facilitate the use of rice cooker
 
 ### For go
 
-    link here
+    https://github.com/hei-school/cc-d2-my-rice-cooker-jaonary-74/blob/feature/go/README.md
 
 ## `**Good luck!**`
