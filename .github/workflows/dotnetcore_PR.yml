@@ -1,0 +1,35 @@
+name: CI for PRs
+
+on:
+  pull_requests:
+    paths:
+    - 'src/**'
+    - 'ARM Template/**'
+    - 'SampleJsonConfig/**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest  
+    
+    steps:
+    - uses: actions/checkout@v5
+    
+    - name: Setup .net Core
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: 3.1.2000
+    - name: Build with dotnet
+      run: dotnet build --configuration Release
+
+  lint:
+  
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v5
+      
+      - name: Super-Linter
+        uses: super-linter/super-linter@v5.7.2
+        env:
+          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }}
