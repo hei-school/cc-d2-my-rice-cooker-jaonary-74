@@ -8,7 +8,7 @@ This program is designed to facilitate the use of wallet
 
 ### For typescript
 
-    [https://github.com/hei-school/cc-d2-my-rice-cooker-jaonary-74/blob/feature/typescript/README.md]
+    https://github.com/hei-school/cc-d2-my-rice-cooker-jaonary-74/blob/feature/typescript/README.md
 
 ### For go
 
