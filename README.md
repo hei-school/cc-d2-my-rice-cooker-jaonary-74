@@ -4,14 +4,9 @@
 
 This program is designed to facilitate the use of wallet
 
-### If you want to make a progamm like this, I suggest to follow the installation and config.
+## Contributions
 
-### For typescript
+If you'd like to add additional features, fix bugs or improve the code, feel free to submit a pull request.
 
-    link here
-
-### For python
-
-    link here
-
-## `**Good luck!**`
+## License
+This package is distributed under the MIT license. See the LICENSE file for more information.
